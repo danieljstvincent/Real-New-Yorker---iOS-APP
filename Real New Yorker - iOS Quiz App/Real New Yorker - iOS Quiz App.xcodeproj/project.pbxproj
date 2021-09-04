@@ -15,6 +15,7 @@
 		C6C46A5426E2B8DA004E7C5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C46A5226E2B8DA004E7C5D /* LaunchScreen.storyboard */; };
 		C6C46A5C26E2CDD3004E7C5D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C46A5B26E2CDD2004E7C5D /* Question.swift */; };
 		C6C46A5E26E2CE55004E7C5D /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C46A5D26E2CE55004E7C5D /* QuizModel.swift */; };
+		C6C46A6026E3E22E004E7C5D /* QuestionData.json in Resources */ = {isa = PBXBuildFile; fileRef = C6C46A5F26E3E22D004E7C5D /* QuestionData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C6C46A5526E2B8DA004E7C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6C46A5B26E2CDD2004E7C5D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		C6C46A5D26E2CE55004E7C5D /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
+		C6C46A5F26E3E22D004E7C5D /* QuestionData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				C6C46A4B26E2B8D6004E7C5D /* ViewController.swift */,
 				C6C46A4D26E2B8D6004E7C5D /* Main.storyboard */,
 				C6C46A5B26E2CDD2004E7C5D /* Question.swift */,
+				C6C46A5F26E3E22D004E7C5D /* QuestionData.json */,
 				C6C46A5D26E2CE55004E7C5D /* QuizModel.swift */,
 				C6C46A5026E2B8DA004E7C5D /* Assets.xcassets */,
 				C6C46A5226E2B8DA004E7C5D /* LaunchScreen.storyboard */,
@@ -133,6 +136,7 @@
 				C6C46A5426E2B8DA004E7C5D /* LaunchScreen.storyboard in Resources */,
 				C6C46A5126E2B8DA004E7C5D /* Assets.xcassets in Resources */,
 				C6C46A4F26E2B8D6004E7C5D /* Main.storyboard in Resources */,
+				C6C46A6026E3E22E004E7C5D /* QuestionData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
