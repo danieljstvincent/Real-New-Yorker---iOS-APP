@@ -6,6 +6,7 @@
 //
 
 import UIKit
+#import <QuartzCore/QuartzCore.h>
 
 class ViewController: UIViewController, QuizProtocol {
     
