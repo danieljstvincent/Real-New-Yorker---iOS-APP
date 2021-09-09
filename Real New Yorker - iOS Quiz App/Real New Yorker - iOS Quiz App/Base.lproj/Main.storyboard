@@ -74,7 +74,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="oTB-BV-Geo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6ia-G0-5M8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f88-2f-Nk1" secondAttribute="trailing" id="BBJ-gC-bym"/>
                             <constraint firstItem="f88-2f-Nk1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ETC-cd-1TZ"/>
                             <constraint firstItem="oTB-BV-Geo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TMM-oe-sYz"/>
                             <constraint firstAttribute="bottom" secondItem="oTB-BV-Geo" secondAttribute="bottom" id="a56-As-n0c"/>
