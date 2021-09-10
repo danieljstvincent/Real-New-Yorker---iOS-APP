@@ -23,10 +23,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="f88-2f-Nk1">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgs-UR-iOe">
-                                        <rect key="frame" x="206.5" y="0.0" width="1.5" height="448"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzp-BN-SBA" userLabel="Question Label">
+                                        <rect key="frame" x="126.5" y="0.0" width="161.5" height="448"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YVh-Zc-5Dg">
@@ -72,7 +72,7 @@
                                     </tableView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="mgs-UR-iOe" firstAttribute="width" secondItem="f88-2f-Nk1" secondAttribute="width" multiplier="0.100242" constant="-40" id="BQs-lb-kCH"/>
+                                    <constraint firstItem="dzp-BN-SBA" firstAttribute="width" secondItem="f88-2f-Nk1" secondAttribute="width" multiplier="0.100242" constant="120" id="kgP-LM-8qn"/>
                                     <constraint firstItem="YVh-Zc-5Dg" firstAttribute="width" secondItem="f88-2f-Nk1" secondAttribute="width" id="nyC-R7-EIf"/>
                                 </constraints>
                             </stackView>
@@ -91,7 +91,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="questionLabel" destination="mgs-UR-iOe" id="5Em-NW-tV8"/>
+                        <outlet property="questionLabel" destination="dzp-BN-SBA" id="n3O-84-7yh"/>
                         <outlet property="tableView" destination="YVh-Zc-5Dg" id="S6q-Jp-P6t"/>
                     </connections>
                 </viewController>
