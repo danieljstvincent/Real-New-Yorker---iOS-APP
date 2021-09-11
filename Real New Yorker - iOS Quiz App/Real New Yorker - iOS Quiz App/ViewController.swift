@@ -8,7 +8,7 @@
 import UIKit
 
 
-class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITableViewDataSource, ResultViewControllerProtocol {
 
     @IBOutlet weak var questionLabel: UILabel!
  
@@ -18,14 +18,22 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
     var questions = [Question]()
     var currentQuestionIndex = 0
     var numCorrect = 0
+    
+    var resultDialog:ResultViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Initialize the result dialog
+        resultDialog = storyboard?.instantiateViewController(identifier: "ResultVC") as? ResultViewController
+        resultDialog?.modalPresentationStyle = .overCurrentContext
+        resultDialog?.delegate = self
         
         //Set Self as the delegate
         tableView.delegate = self
         tableView.dataSource = self
         
+      
         // Dynamic row heights
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableView.automaticDimension
@@ -100,17 +108,50 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        var titleText = ""
+        
         let question = questions[currentQuestionIndex]
         
         if question.correctAnswerIndex! == indexPath.row {
             print("User got it right")
+            
+            titleText = "Correct!"
+            numCorrect += 1
         }
         else {
             print ("User got it wrong")
         }
         
+   
+
+    }
+    
+    //MARK: - ResultViewControllerProtocol Methods
+    
+    func dialogDismissed() {
+        
         currentQuestionIndex += 1
         
-        displayQuestion()
+        if currentQuestionIndex == questions.count {
+            
+            // Show the popup
+            if resultDialog != nil {
+                
+                // Customize the dialog text
+                resultDialog!.titleText = "Summary"
+                resultDialog!.feedbackText = "You got \(numCorrect) correct out of \(questions.count) questions"
+                resultDialog!.buttonText = "Restart"
+
+                present(resultDialog!, animated: true, completion: nil)
+            }
+            
+        }
+        else if currentQuestionIndex < questions.count {
+            // Display the next question
+            displayQuestion()
+        }
+      
+      
+        
     }
 }
