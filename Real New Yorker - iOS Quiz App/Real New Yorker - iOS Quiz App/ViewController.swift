@@ -24,6 +24,9 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //color of app
+        self.view.backgroundColor = UIColor.init(displayP3Red: 0, green: 107, blue: 182, alpha: 100)
+        
         //Initialize the result dialog
         resultDialog = storyboard?.instantiateViewController(identifier: "ResultVC") as? ResultViewController
         resultDialog?.modalPresentationStyle = .overCurrentContext
@@ -61,6 +64,20 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
         // Get a reference to the questions
         self.questions = questions
         
+        // Check if we should restore the state , before showing question #1
+        let savedIndex = StateManager.retrieveValue(key: StateManager.questionIndexKey) as? Int
+        
+        if savedIndex != nil && savedIndex! < self.questions.count {
+            
+            currentQuestionIndex = savedIndex!
+            
+            // Retreve the number correct from storage
+        let savedNumCorrect = StateManager.retrieveValue(key: StateManager.numCorrectKey) as! Int
+            
+            if savedNumCorrect != nil {
+                numCorrect = savedNumCorrect
+            }
+        }
         //display the first question
         displayQuestion()
         
@@ -121,8 +138,6 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
         else {
             print ("User got it wrong")
         }
-        
-   
 
     }
     
@@ -143,12 +158,23 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
                 resultDialog!.buttonText = "Restart"
 
                 present(resultDialog!, animated: true, completion: nil)
+                
+                StateManager.clearState()
             }
             
         }
+        else if currentQuestionIndex > questions.count {
+            // Restart
+            numCorrect = 0
+            currentQuestionIndex = 0
+            displayQuestion()
+        }
+        
         else if currentQuestionIndex < questions.count {
             // Display the next question
             displayQuestion()
+            
+            StateManager.saveState(numCorrect: numCorrect, questionIndex: currentQuestionIndex)
         }
       
       

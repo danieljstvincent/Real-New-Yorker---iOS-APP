@@ -40,9 +40,13 @@ class QuizModel {
             let decoder = JSONDecoder()
             let array = try
                 decoder.decode([Question].self, from:data)
+            //Use the main thread to motify the view controller for UI Work
+            DispatchQueue.main.async {
+                self.delegate?.questionRetrieved(array)
+            }
             
             //Notify the Delegate of the persed objects
-            delegate?.questionRetrieved(array)
+            self.delegate?.questionRetrieved(array)
         }
         catch {
         // Get the data from the url

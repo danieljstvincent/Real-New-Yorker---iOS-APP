@@ -33,45 +33,45 @@
     "feedback": ""
   },
   {
-    "question": "4. What's the correct order of New York City boroughs from largest to smallest?",
+    "question": "What's the correct order of New York City boroughs from largest to smallest?",
     "answers": [
-      "A. Manhattan, Brooklyn, Queens, The Bronx, Staten Island",
-      "B.Brooklyn, Manhatten, Queens, Staten Island, The Bronx",
-      "C. Brooklyn, Queens, Manhatten, Staten Island, The Bronx",
+      "Manhattan, Brooklyn, Queens, The Bronx, Staten Island",
+      "Brooklyn, Manhatten, Queens, Staten Island, The Bronx",
+      "Brooklyn, Queens, Manhatten, Staten Island, The Bronx",
       "Queens, Brooklyn, Staten Island, The Bronx, Manhattan"
     ],
     "correctAnswerIndex": 3,
     "feedback": ""
   },
   {
-    "question": "5. Which of these NYC subway lines does not run on the express track?",
+    "question": "Which of these NYC subway lines does not run on the express track?",
     "answers": [
-      "A. C Train",
-      "B. 4 Train",
-      "C. Q Train",
-      "D. D Train"
+      "C Train",
+      "4 Train",
+      "Q Train",
+      "D Train"
     ],
     "correctAnswerIndex": 0,
     "feedback": ""
   },
   {
-    "question": "6. What is the flat fare to get from Manhattan to JFK by cab?",
+    "question": "What is the flat fare to get from Manhattan to JFK by cab?",
     "answers": [
-      "A. $40",
-      "B. $25",
-      "C. $52",
-      "D. $70"
+      "$40",
+      "$25",
+      "$52",
+      "$70"
     ],
     "correctAnswerIndex": 0,
     "feedback": ""
   },
   {
-    "question": "7. In what borough is Time Square Location?",
+    "question": "In what borough is Time Square Location?",
     "answers": [
-      "A. Manhattan",
-      "B. Brooklyn ",
-      "C. Queens",
-      "D. The Bronx"
+      "Manhattan",
+      "Brooklyn ",
+      "Queens",
+      "The Bronx"
     ],
     "correctAnswerIndex": 0,
     "feedback": ""
@@ -79,10 +79,10 @@
   {
     "question": "8. How much does it cost to ride the staten island ferry?",
     "answers": [
-      "A. $2.75",
-      "B. $4.75 ",
-      "C. $7.50",
-      "D. All ride are free"
+      "$2.75",
+      "$4.75 ",
+      "$7.50",
+      "All ride are free"
     ],
     "correctAnswerIndex": 3,
     "feedback": ""
@@ -90,10 +90,10 @@
   {
     "question": "9. How much does it cost to ride the staten island ferry?",
     "answers": [
-      "A. $2.75",
-      "B. $4.75 ",
-      "C. $7.50",
-      "D. All ride are free"
+      "$2.75",
+      "$4.75 ",
+      "$7.50",
+      "All ride are free"
     ],
     "correctAnswerIndex": 3,
     "feedback": ""
@@ -101,10 +101,10 @@
   {
     "question": "10. How much does it cost to ride the staten island ferry?",
     "answers": [
-      "A. $2.75",
-      "B. $4.75 ",
-      "C. $7.50",
-      "D. All ride are free"
+      "$2.75",
+      "$4.75 ",
+      "$7.50",
+      "All ride are free"
     ],
     "correctAnswerIndex": 3,
     "feedback": ""
