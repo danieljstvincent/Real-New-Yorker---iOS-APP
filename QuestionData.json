@@ -1,0 +1,112 @@
+[
+  {
+    "question": "What does the giant countdown clock in Union Square mean?",
+    "answers": [
+      "A.Countdown Until the New Year",
+      "B. Countdown Until the end of the Millennium",
+      "C. Countdown Until the end of the world",
+      "The number are simple in Military Time"
+    ],
+    "correctAnswerIndex": 3,
+    "feedback": " "
+  },
+  {
+    "question": "2. Translate the Spanish word Bodega in English ",
+    "answers": [
+      "A. Liquor Store",
+      "B. Convenience Store",
+      "C. The Club",
+      "D.None of the Above"
+    ],
+    "correctAnswerIndex": 2,
+    "feedback": ""
+  },
+  {
+    "question": "3. 3. What's the proper way to hold a slice of pizza in New York City? ",
+    "answers": [
+      "A. Normal",
+      "B. From the Back",
+      "C. Fold it",
+      "D.None of the Above"
+    ],
+    "correctAnswerIndex": 2,
+    "feedback": ""
+  },
+  {
+    "question": "What's the correct order of New York City boroughs from largest to smallest?",
+    "answers": [
+      "Manhattan, Brooklyn, Queens, The Bronx, Staten Island",
+      "Brooklyn, Manhatten, Queens, Staten Island, The Bronx",
+      "Brooklyn, Queens, Manhatten, Staten Island, The Bronx",
+      "Queens, Brooklyn, Staten Island, The Bronx, Manhattan"
+    ],
+    "correctAnswerIndex": 3,
+    "feedback": ""
+  },
+  {
+    "question": "Which of these NYC subway lines does not run on the express track?",
+    "answers": [
+      "C Train",
+      "4 Train",
+      "Q Train",
+      "D Train"
+    ],
+    "correctAnswerIndex": 0,
+    "feedback": ""
+  },
+  {
+    "question": "What is the flat fare to get from Manhattan to JFK by cab?",
+    "answers": [
+      "$40",
+      "$25",
+      "$52",
+      "$70"
+    ],
+    "correctAnswerIndex": 0,
+    "feedback": ""
+  },
+  {
+    "question": "In what borough is Time Square Location?",
+    "answers": [
+      "Manhattan",
+      "Brooklyn ",
+      "Queens",
+      "The Bronx"
+    ],
+    "correctAnswerIndex": 0,
+    "feedback": ""
+  },
+  {
+    "question": "8. How much does it cost to ride the staten island ferry?",
+    "answers": [
+      "$2.75",
+      "$4.75 ",
+      "$7.50",
+      "All ride are free"
+    ],
+    "correctAnswerIndex": 3,
+    "feedback": ""
+  },
+  {
+    "question": "9. How much does it cost to ride the staten island ferry?",
+    "answers": [
+      "$2.75",
+      "$4.75 ",
+      "$7.50",
+      "All ride are free"
+    ],
+    "correctAnswerIndex": 3,
+    "feedback": ""
+  },
+  {
+    "question": "10. How much does it cost to ride the staten island ferry?",
+    "answers": [
+      "$2.75",
+      "$4.75 ",
+      "$7.50",
+      "All ride are free"
+    ],
+    "correctAnswerIndex": 3,
+    "feedback": ""
+  }
+]
