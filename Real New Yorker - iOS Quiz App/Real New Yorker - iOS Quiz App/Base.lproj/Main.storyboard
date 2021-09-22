@@ -16,10 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="oTB-BV-Geo">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="f88-2f-Nk1">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
@@ -80,13 +76,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="oTB-BV-Geo" secondAttribute="bottom" id="9cO-PM-54g"/>
                             <constraint firstItem="f88-2f-Nk1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9xc-2H-YfB"/>
-                            <constraint firstItem="oTB-BV-Geo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UXq-B6-e4Z"/>
                             <constraint firstItem="f88-2f-Nk1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="foQ-Hu-LFQ"/>
-                            <constraint firstAttribute="trailing" secondItem="oTB-BV-Geo" secondAttribute="trailing" id="gyZ-o3-ZTP"/>
                             <constraint firstAttribute="trailing" secondItem="f88-2f-Nk1" secondAttribute="trailing" id="jBc-LC-0Tz"/>
-                            <constraint firstItem="oTB-BV-Geo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jPj-5J-xhh"/>
                             <constraint firstAttribute="bottom" secondItem="f88-2f-Nk1" secondAttribute="bottom" id="oXc-bW-6nU"/>
                         </constraints>
                     </view>
@@ -179,7 +171,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BackgroundImage" width="375" height="667"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

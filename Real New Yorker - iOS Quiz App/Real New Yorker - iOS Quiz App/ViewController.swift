@@ -51,7 +51,7 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
         
         // Display the question text
         questionLabel.text = questions[currentQuestionIndex].question
-        
+        questionLabel.backgroundColor = .red
         // Reload the answers table
         tableView.reloadData()
     }
