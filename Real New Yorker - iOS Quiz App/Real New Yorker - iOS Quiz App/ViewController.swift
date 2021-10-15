@@ -24,6 +24,7 @@ class ViewController: UIViewController, QuizProtocol, UITableViewDelegate, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .blue
         // Initialize the result dialog
         resultDialog = storyboard?.instantiateViewController(identifier: "ResultVC") as? ResultViewController
         resultDialog?.modalPresentationStyle = .overCurrentContext
